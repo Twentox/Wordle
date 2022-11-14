@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woordle</title>
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dosis:wght@300;400;500&family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Mulish:wght@200;300;400;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class ="header">
+        <h1 class ="header-headline">Woordle</h1>
+        <div class ="header-info-container">
+            <div class ="header-info-icon-wrapper">
+                <button class ="header-info-icon"><i class="fa fa-circle-info"></i></button>
+            </div>
+        </div>
+    </header>
+
+        <div class ="center">
+            <div class ="woordle-container" id="woordle-container">
+                <div class ="woordle-row">
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                </div>
+                <div class ="woordle-row">
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                </div>
+                <div class ="woordle-row">
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                </div>
+                <div class ="woordle-row">
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                </div>
+                <div class ="woordle-row">
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+                    <div class ="woordle-column"></div>
+               </div>
+            </div>
+        </div>
+
+    <div class ="result" id ="result-container"></div>
+
+    <div class ="info-card-container" id ="info-card-container">
+        <div class ="info-card">
+            <h2 class ="info-card-headline">Woordle</h2>
+            <p class ="info-card-sub-text">Woordle ist ein Spiel, wo es darum geht Wörter zu erraten. Das Ziel ist es das Wort in 5 Versuchen zu erraten. Wenn man nach 5 Versuchen das Wort nicht herausgefunden hat, hat man verloren.</p>
+            <div class ="info-card-center">
+                <div class ="info-card-example-container">
+                    <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="E"">
+                    <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="S">
+                    <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="S">
+                    <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="E">
+                    <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="N">
+                </div>
+            </div>
+                <div class ="info-card-icon-container-enter">
+                    <div class ="info-card-icon-enter-box">
+                        <div class ="info-icon-enter">
+                            &#9166
+                        </div>
+                    </div>
+                </div>
+                <p class ="info-card-icon-text">Wenn sie ein Wort eingeben haben, dann drücken sie Enter, sodass der Browser ihr Wort auswerten kann</p> 
+                <div class ="info-card-center">
+                    <div class ="info-card-example-container">
+                        <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="E" style="background-color:#588157;">
+                        <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="S">
+                        <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="S" style="background-color: #f4a261;">
+                        <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="E">
+                        <input class ="info-card-textarea"maxlength="1" type ="textarea" disabled placeholder="N" style="background-color:#ff595e ;">
+                    </div>
+                </div>
+                <div class ="info-card-center">
+                    <div class ="info-card-example-container" style="margin-top: 0.5rem;">
+                        <div class ="info-icon-container-arrow">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                        <div class ="info-icon-container-arrow">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                        <div class ="info-icon-container-arrow">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class ="info-card-center">
+                    <div class ="info-card-text-box-container">
+                        <div class ="info-card-text-container">
+                            <p class ="info-card-text">Wenn eine grüne Hintergrundfarbe erscheint bedeutet das, dass der Buchstabe an der richtigen Stelle steht</p>
+                        </div>
+                        <div class ="info-card-text-container">
+                            <p class ="info-card-text">Wenn eine orange Hintergrundfarbe erscheint bedeutet das, dass der Buchstabe in dem Wort existiert, aber nicht an der richtigen Stelle steht</p>
+                        </div>
+                        <div class ="info-card-text-container">
+                            <p class ="info-card-text">Wenn eine rote Hintergrundfarbe erscheint bedeutet das, dass der Buchstabe nicht in dem Wort existiert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class ="info-card-center">
+                    <div class ="info-card-btn-container">
+                        <button class ="info-card-btn">zurück zum Spiel</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+            integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+            integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
